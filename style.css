@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(112, 176, 250);
+}
+.container-app{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-app .data{
+    display: inline-block;   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes animeCorazon {
+    from{width: 50vw}
+    to{width: 70vw}
+}
+@keyframes animeText {
+    from{font-size: 5vw}
+    to{font-size: 7vw}
+}
+
+.container-app .data img{
+    width: 50vw;
+    filter: drop-shadow(0 0 2px #000);
+}
+.container-app .data p{
+    font-size: clamp(.5rem, 5vw,5rem);
+    cursor: default;
+    position: absolute;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 0 0 1px #333;
+    padding: 8px;
+}
+
